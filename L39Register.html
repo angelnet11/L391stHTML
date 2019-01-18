@@ -4,14 +4,17 @@
 	<title>Register</title>
 </head>
 <body>
-<form method="GET"> <!-- post -->
+<form method="GET"> <!-- better use POST instead GET -->
+<!-- <form action="http://www.donothingfor2minutes.com/" method="GET"> go to this link after clicking register! -->
   <fieldset>
     <LEGEND><h1>Register</h1></LEGEND>
-	First Name:<input type="text" name="firstname"><br>
-	Last Name:<input type="text" name="lastname" required><br>
+	First Name:<input type="text" name="firstname" required><br>
+	<!-- <label for="username">User Name</label>
+	<input id="username" name="username"> -->
+	Last Name:<input type="text" name="lastname" ><br>
 	Email:<input type="email" name="email" required><br>
 	<input type="checkbox" name="travel">Subscribe: Please email me the newest article once it come out!<br>
-	Password:<input type="password" min="5" name="password"><br><br>
+	Password:<input type="password" minlength="5" name="password"><br><br>
 	Birthday:<input type="date" name="birthday"><br>
 	Gender:<br>
 	  <input type="radio" name="gender" value="female">Female<br>
